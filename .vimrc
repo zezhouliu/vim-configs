@@ -20,11 +20,6 @@ set expandtab
 " Enable mouse in all modes
 set mouse=a
 
-" Highlight end of line whitespaces
-autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
-autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
-highlight EOLWS ctermbg=red guibg=red
-
 " Solarized color scheme
 set t_Co=256
 syntax enable
